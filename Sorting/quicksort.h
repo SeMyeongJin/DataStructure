@@ -33,7 +33,7 @@ int partitionQuickSort(int value[], int start, int end)
 		while (value[left] < value[pivot] && (left < right))
 			left++;
 		while (value[right] >= value[pivot] && (left < right))
-			left++;
+			right--;
 
 		if (left < right)
 		{
